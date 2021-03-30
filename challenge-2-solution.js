@@ -1,16 +1,14 @@
 let q1 = prompt('1st number ?')
 let q2 = prompt('2nd number ?')
-
 let q3 = prompt('3rd number ?')
 let q4 = prompt('4th number ?')
-
 let q5 = prompt('5th number ?')
 
 let qArray = [parseInt(q1), parseInt(q2), parseInt(q3), parseInt(q4), parseInt(q5)];
 
 
 function get_min_max(qArray) {
-    let min = -999999999999999999999999999;
+    let min = -99999999999999999999999999999;
     let max = 99999999999999999999999999999;
     for (let i = 0; i < qArray.length; i++) {
 
@@ -28,6 +26,8 @@ function get_min_max(qArray) {
     }
     console.log(min);
     console.log(max);
+    alert('min is: ' + min);
+    alert('max is: ' + max);
 
 }
 
